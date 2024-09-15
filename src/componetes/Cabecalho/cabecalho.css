@@ -1,0 +1,53 @@
+.header-menu {
+  background: #4f372f;
+  margin: 0 auto;
+  opacity: 1;
+}
+
+ul {
+  max-width: 1440px;
+  height: 52px;
+
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 0;
+  align-items: center;
+}
+
+li {
+  width: 232px;
+  height: 23px;
+  margin: 13px 0;
+
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.header-menu a.ativo:after {
+  content: "";
+  display: block;
+  height: 5px;
+  width: 232px;
+  background: white;
+  margin-top: 10px;
+}
+
+.banner {
+  width: auto;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(
+    90deg,
+    #36231c 18.92%,
+    rgba(54, 35, 28, 0) 50.56%,
+    #36231c 80.88%
+  );
+}
+
+nav img {
+  max-width: 1440px;
+  height: 125px;
+}
