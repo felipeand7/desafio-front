@@ -1,0 +1,35 @@
+.search {
+  max-width: 1440px; /* Faz a busca ocupar a largura total */
+  display: flex;
+  padding: 10px 12px 10px 12px;
+  justify-content: center;
+}
+
+form {
+  width: 100%;
+  max-width: 1024px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid #8a94a4;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+form img {
+  width: 48px;
+  height: 44px;
+  gap: 10px;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  font-family: Roboto, sans-serif;
+  margin-left: -10px;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
