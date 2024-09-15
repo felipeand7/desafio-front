@@ -1,0 +1,16 @@
+.banner {
+  width: auto;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(
+    90deg,
+    #36231c 18.92%,
+    rgba(54, 35, 28, 0) 50.56%,
+    #36231c 80.88%
+  );
+}
+
+nav img {
+  max-width: 1440px;
+  height: 125px;
+}

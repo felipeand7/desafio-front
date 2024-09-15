@@ -1,22 +1,6 @@
 import "./cabecalho.css";
-import { useEffect, useState } from "react";
-
-interface ApiResponse {
-  webSettings: {
-    bannerImage: string;
-  };
-}
 
 const cabecalho = () => {
-  const [banner, setBanner] = useState<ApiResponse | null>(null);
-
-  useEffect(() => {
-    fetch("https://cdn-dev.preoday.com/challenge/venue/9")
-      .then((response) => response.json())
-      .then((json) => setBanner(json))
-      .catch((error) => console.error("Erro ao buscar banner", error));
-  }, []);
-
   return (
     <header>
       <nav className="header-menu ">
@@ -34,9 +18,6 @@ const cabecalho = () => {
           </li>
         </ul>
       </nav>
-      <div className="banner">
-        <img src={banner?.webSettings.bannerImage} alt="Banner" />
-      </div>
     </header>
   );
 };
