@@ -9,6 +9,7 @@ interface ApiResponse {
 
 const Banner = () => {
   const [banner, setBanner] = useState<ApiResponse | null>(null);
+  const bannerImage = banner?.webSettings.bannerImage;
 
   useEffect(() => {
     fetch("https://cdn-dev.preoday.com/challenge/venue/9")
@@ -19,7 +20,7 @@ const Banner = () => {
 
   return (
     <div className="banner">
-      <img src={banner?.webSettings.bannerImage} alt="Banner" />
+      <img src={bannerImage} alt="Banner" />
     </div>
   );
 };
