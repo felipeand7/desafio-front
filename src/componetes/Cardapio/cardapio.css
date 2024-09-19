@@ -1,0 +1,162 @@
+header {
+  max-width: 1024px;
+  width: 100% auto;
+  height: 1337px;
+  background: #f8f9fa;
+  display: flex;
+  padding: 30px;
+  gap: 24px;
+
+  flex-direction: row;
+}
+
+#left {
+  margin: 0;
+}
+
+#rigth {
+  background: #ffffff;
+  width: 600px;
+  height: 90px;
+}
+
+.categorialist {
+  background: #ffffff;
+  max-width: 600px;
+  height: 190px;
+  box-shadow: 0px 2px 14px 0px #00000024;
+  display: flex;
+  align-items: center;
+}
+
+.categoria {
+  width: 104px;
+  height: 146px;
+  margin: 0;
+  text-align: center;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.categoria img {
+  width: 74px;
+  height: 74px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.categoria span {
+  display: flex;
+  justify-content: center;
+
+  padding: 10px 0;
+
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 18.75px;
+  letter-spacing: 0.5px;
+}
+
+.categoria span a {
+  margin: 10px;
+  color: black;
+}
+
+.ativo img {
+  padding: 2px;
+  margin: 0;
+  border: 2px solid #000000;
+}
+
+.ativo a:after {
+  content: "";
+  display: block;
+  width: 96px;
+  height: 2px;
+  background: rgb(0, 0, 0);
+  margin-top: 15px;
+}
+
+.cabesalhoCardapio img {
+  width: 24px;
+  height: 24px;
+  padding: 7.29px 3.29px 6.59px 3.29px;
+}
+
+.cabesalhoCardapio {
+  align-items: center;
+  background: #ffffff;
+  max-width: 600px;
+  width: 100%;
+  height: 72px;
+  margin: 0;
+  padding: 10px 0;
+  display: flex;
+
+  align-items: center;
+}
+
+.cabesalhoCardapio h2 {
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28.13px;
+  letter-spacing: 0.5px;
+  text-align: left;
+  margin: 0 440px 0px 20px;
+}
+
+.cardapiolist {
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 18.75px;
+  text-align: left;
+}
+
+.cardapiolist img {
+  width: 128px;
+  height: 85px;
+}
+
+.cardapio-item {
+  max-width: 600px;
+  width: 100%;
+  display: flex;
+  background: #ffffff;
+  padding: 10px 0;
+  padding: 20px;
+  gap: 16px;
+}
+
+.cardapio-item p {
+  width: 424px;
+  height: 19px;
+  margin: 5px 0;
+  color: #464646;
+  font-weight: 300;
+}
+
+.cardapio-item h4 {
+  color: #121212;
+  font-weight: 500;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18.75px;
+  text-align: left;
+}
+.cardapio-item h4 {
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+.cardapio-item img {
+  width: 128px;
+  height: 85px;
+}
+
+.cardapio-infor {
+  width: 424px;
+  height: 85px;
+  gap: 4px;
+}
