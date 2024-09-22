@@ -8,6 +8,7 @@ function App() {
       <Cabecalho />
       <Banner />
       <SearchMenu />
+
       <Cardapio />
     </div>
   );
