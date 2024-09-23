@@ -1,4 +1,3 @@
-import React from "react";
 import defaultImage from "../Cardapio/Conponetes/img/lanche.png"; // Importe a imagem padrão
 import "./style.css";
 
@@ -12,7 +11,7 @@ type Props = {
   };
 };
 
-const Popup: React.FC<Props> = ({ onClose, item }) => {
+const Popup = ({ onClose, item }: Props) => {
   return (
     <div id="popup-overlay" onClick={onClose}>
       <div id="popup" onClick={(e) => e.stopPropagation()}>
