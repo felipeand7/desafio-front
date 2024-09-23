@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
 import defaultImage from "../img/lanche.png";
 import "./style.css";
-type Props = {};
+type Props = {
+  title: string;
+};
 
 interface ItemImage {
   id: number;
@@ -26,7 +28,7 @@ interface ApiResponse {
   sections: Section[];
 }
 
-const Produto = (props: Props) => {
+const Produto = ({ title }: Props) => {
   const [menu, setMenu] = useState<ApiResponse | null>(null);
 
   useEffect(() => {
@@ -36,11 +38,10 @@ const Produto = (props: Props) => {
       .catch((error) => console.error("Erro ao buscar menu", error));
   }, []);
 
-  return (
-    <div className="cardapiolist left">
-      {menu?.sections
-        .find((section) => section.name === "Burgers")
-        ?.items.map((item) => (
+  if (title === "Burgers") {
+    return (
+      <div className="cardapiolist ">
+        {menu?.sections[0]?.items.map((item) => (
           <div key={item.id} className="cardapio-item">
             <div className="cardapio-infor">
               <h4>{item.name}</h4>
@@ -58,8 +59,23 @@ const Produto = (props: Props) => {
             )}
           </div>
         ))}
-    </div>
-  );
+      </div>
+    );
+  } else if (title === "Drinks") {
+    return (
+      <div className="cardapiolist ">
+        {menu?.sections[1]?.items.map((item) => (
+          <div key={item.id} className="cardapio-item">
+            <div className="cardapio-infor " id="drinks">
+              <h4>{item.name}</h4>
+              <p>{item.description || "Sem descrição disponível"}</p>
+              <h5>R$ {item.price.toFixed(2)}</h5>
+            </div>
+          </div>
+        ))}
+      </div>
+    );
+  }
 };
 
 export default Produto;

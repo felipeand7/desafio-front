@@ -1,5 +1,58 @@
-#rigth {
+#carrinho {
+  width: 500px;
+  height: 80px;
+  background: #ffffff;
+}
+
+#carrinho h3 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28.13px;
+  letter-spacing: 0.5px;
+  text-align: left;
+  color: #464646;
+  padding: 20px;
+}
+
+#carrinho p {
+  background: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18.75px;
+  padding: 20px;
+}
+
+/* #carrinho {
   background: #ffffff;
   width: 600px;
-  height: 90px;
+  height: 80px;
+  font-family: Roboto;
+  box-shadow: 0px 2px 14px 0px #00000024;
 }
+
+#carrinho h3 {
+  width: 320px;
+  height: 64px;
+  padding: 16px 24px 16px 24px;
+  border-radius: 5px 5px 0px 0px;
+
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28.13px;
+  letter-spacing: 0.5px;
+  text-align: left;
+  color: #464646;
+  padding: 20px;
+}
+
+#carrinho p {
+  width: 370px;
+  height: 64px;
+  padding: 16px 24px 16px 24px;
+  border-radius: 5px 5px 0px 0px;
+
+  background: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18.75px;
+} */

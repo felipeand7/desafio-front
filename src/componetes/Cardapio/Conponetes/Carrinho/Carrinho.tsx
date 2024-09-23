@@ -5,8 +5,11 @@ type Props = {};
 
 const Carrinho = (props: Props) => {
   return (
-    <div id="rigth">
-      <h5>Carrinho</h5>
+    <div id="carrinho">
+      <div className="item">
+        <h3>Carrinho</h3>
+      </div>
+      <p>Seu carrinho está vazio</p>
     </div>
   );
 };

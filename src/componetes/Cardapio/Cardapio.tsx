@@ -11,10 +11,10 @@ const Cardapio = () => {
       <div id="left">
         <Categoria />
         <Cabecalho name="Burgers" />
-        <Produtos />
+        <Produtos title="Burgers" />
         <Cabecalho name="Drinks" />
+        <Produtos title="Drinks" />
       </div>
-
       <Carrinho />
     </header>
   );
