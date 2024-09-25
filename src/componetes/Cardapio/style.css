@@ -1,12 +1,10 @@
 header {
   max-width: 1024px;
-  width: 100% auto;
-  height: 1337px;
+  height: auto;
   background: #f8f9fa;
   display: flex;
   padding: 30px;
   gap: 24px;
-
   flex-direction: row;
 }
 

@@ -5,6 +5,7 @@
 
 body {
   background: #eeeeee;
+  overflow-x: hidden;
 }
 
 a {

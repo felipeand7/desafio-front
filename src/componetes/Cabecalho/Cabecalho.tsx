@@ -1,19 +1,26 @@
+import React, { useState } from "react";
 import "./cabecalho.css";
 
-const cabecalho = () => {
+const Cabecalho: React.FC = () => {
+  const [activeIndex, setActiveIndex] = useState(0);
+
   const menu = [
-    { name: "MENU", link: "/" },
-    { name: "ENTRA", link: "/" },
-    { name: "CONTATO", link: "/" },
+    { name: "MENU", link: "#" },
+    { name: "ENTRA", link: "#entra" },
+    { name: "CONTATO", link: "#contato" },
   ];
 
   return (
-    <nav className="header-menu ">
+    <nav className="header-menu">
       <ul>
-        {menu.map((menu, link) => (
-          <li key={link}>
-            <a className={link === 0 ? "ativo" : ""} href={menu.link}>
-              {menu.name}
+        {menu.map((item, index) => (
+          <li key={index}>
+            <a
+              className={activeIndex === index ? "ativo" : ""}
+              href={item.link}
+              onClick={() => setActiveIndex(index)}
+            >
+              {item.name}
             </a>
           </li>
         ))}
@@ -22,4 +29,4 @@ const cabecalho = () => {
   );
 };
 
-export default cabecalho;
+export default Cabecalho;

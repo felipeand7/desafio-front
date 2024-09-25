@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import defaultImage from "../img/lanche.png";
 import Popup from "../../../Popup/Popup"; // Importe o Popup
 import "./style.css";

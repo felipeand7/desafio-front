@@ -1,9 +1,6 @@
-import React from "react";
 import "./style.css";
 
-type Props = {};
-
-const Carrinho = (props: Props) => {
+const Carrinho: React.FC = () => {
   return (
     <div id="carrinho">
       <div className="item">

@@ -1,6 +1,6 @@
 import "./SearchMenu.css";
 
-const SearchMenu = () => {
+const SearchMenu: React.FC = () => {
   return (
     <div className="search">
       <form method="text" action="#">
